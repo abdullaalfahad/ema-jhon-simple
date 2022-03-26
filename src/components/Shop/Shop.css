@@ -6,5 +6,20 @@
 .product-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 45px;
+    grid-gap: 50px 10px;
+    justify-items: center;
+    margin: 100px 0;
+}
+
+.cart-container {
+    background-color: #FFE0B3;
+    padding: 10px 10px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .product-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
 }
