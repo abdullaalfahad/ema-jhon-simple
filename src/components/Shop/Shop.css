@@ -23,3 +23,22 @@
         justify-items: center;
     }
 }
+
+.pagination {
+    margin: 0 auto 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button,
+select {
+    font-size: 20px;
+    margin: 0 10px;
+    background-color: white;
+    border: 1px solid #ffbe5d;
+    padding: 5px 10px;
+}
+
+.pagination .selected {
+    background-color: #ffbe5d;
+}

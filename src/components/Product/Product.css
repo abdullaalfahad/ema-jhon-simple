@@ -38,3 +38,7 @@
 .cart-text {
     margin-right: 5px;
 }
+
+.cart-btn:hover {
+    background-color: #ffbe5d;
+}

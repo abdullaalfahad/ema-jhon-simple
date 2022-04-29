@@ -12,9 +12,9 @@ const Orders = () => {
     const [cart, setCart] = useCart(products);
 
     const handleRemove = product => {
-        const item = cart.filter(pd => pd.id !== product.id);
+        const item = cart.filter(pd => pd._id !== product._id);
         setCart(item);
-        removeFromDb(product.id);
+        removeFromDb(product._id);
     }
 
     const navigate = useNavigate();
@@ -24,7 +24,7 @@ const Orders = () => {
             <div className="order-products">
                 {
                     cart.map(product => <ReviewItem
-                        key={product.id}
+                        key={product._id}
                         product={product}
                         handleRemove={handleRemove}
                     ></ReviewItem>)
